@@ -5,6 +5,12 @@ export default {
         getOtherTeam(team){
             return this.teams.find(t=>t != team);
         },
+        newGameAlert(){
+            const alertResponse = confirm('Are you sure you want to start a new game?');
+            if (alertResponse){
+                this.newGame();
+            }
+        },
         newGame(){
             const words = shuffle(this.words).slice(0,25);
             const teams = shuffle(['red','blue']);
