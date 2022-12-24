@@ -125,7 +125,7 @@
                 </b-col>
             </b-row>
             <hr>
-            <b-button class="mt-2" variant="danger" @click="newGame()"><font-awesome-icon icon="play-circle" />&nbsp;New Game</b-button>
+            <b-button class="mt-2" variant="danger" @click="newGameAlert()"><font-awesome-icon icon="play-circle" />&nbsp;New Game</b-button>
         </b-col>
 
         <b-col sm="8">
